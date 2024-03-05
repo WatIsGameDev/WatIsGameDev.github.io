@@ -1,0 +1,384 @@
+/* CSS Reset Start ---------------- */
+/* CSS Reset Start ---------------- */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    background-color: rgb(11, 13, 14);
+    font-family: monospace;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, a, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+
+/* CSS Reset End ---------------- */
+/* CSS Reset End ---------------- */
+
+/* other CSS */
+
+/*BANNER START */
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-video {
+  z-index: -1;
+  position:absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  z-index: -99;
+  filter: brightness(20%);
+  
+}
+
+.content {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.content a, .container-right a{
+  margin-top: 1em;
+  text-decoration: none;
+  display: block;
+  color: rgb(104, 207, 255);
+  font-size: 1.1em;
+  border: 3px solid rgb(104,207,255);
+  padding: 0.4em 1em;
+  border-radius: 2em;
+  transition: 0.2s ease;
+}
+
+.content a:hover, .container-right a:hover{
+  background-color: rgb(210, 244, 255);
+  color:rgb(22, 135, 187)
+}
+
+.content img {
+  display: block;
+  margin: auto;
+  margin-bottom: -3em;
+  margin-top: 1em;
+}
+
+/*BANNER END */
+
+
+/*navbar start*/
+.navbar {
+    z-index: 99;
+    position: fixed;
+    font-size: 1.1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3em;
+    background-color: rgb(15, 15, 15);
+}
+
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 15px;
+
+}
+
+.navbar a {
+  color: rgb(104, 207, 255);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: rgb(194, 236, 255);
+}
+
+.navbar a:active {
+  color: rgb(22, 135, 187);
+}
+
+.logo {
+  cursor: pointer;
+  width: 300px;
+}
+
+.icon {
+  border: 4px solid rgb(40, 69, 83);;
+  padding: 0.1em;
+  border-radius: 2em;
+  cursor: pointer;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  transition: 0.3s ease;
+}
+
+.icon:hover {
+  opacity: 0.9;
+  background-color: rgb(255, 255, 255);
+}
+
+.icon:active {
+  background-color: rgb(0, 75, 105);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  padding: 0.15em 0.4em;
+  margin-right: 0.3em;
+  border: 3px solid rgb(16, 48, 61);
+  border-radius: 0.8em;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search input::placeholder {
+  color: rgb(180, 180, 180);
+}
+/*navbar end*/
+
+
+/* SCROLL BAR START */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #303841; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4da3ca; 
+  border-radius: 20px;
+  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #296c8b; 
+}
+
+/* SCROLL BAR END */
+
+audio {
+  margin-bottom: 6em;
+  
+}
+
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #2586be;
+     color: #ffffff;
+     }
+
+
+main {
+  background-color: rgb(11, 13, 14);
+  color: white;
+  height: 120vh;
+  display: flex;
+}
+
+main table, th, td {
+  padding: 0.5em;
+  border: 2px solid rgb(24, 60, 82);
+  border-collapse: collapse;
+  text-align: center;
+}
+
+main table img {
+  width: 300px;
+}
+
+main table a {
+  border: 3px solid rgb(104,207,255);
+  padding: 0.2em 1em;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.4em;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+main table a:hover {
+  color: black;
+  background-color: rgb(46, 189, 255);
+  border: rgb(218, 243, 255);
+}
+
+main table a:active {
+  background-color: rgb(194, 236, 255);
+}
+
+main table div {
+  margin: 0.7em 0;
+}
+
+main table {
+  margin: 10em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-content {
+  display: flex;
+  margin: auto;
+  height: 100vh;
+}
+
+.main-content h1 h2 h3 p {
+  color: white;
+}
+
+.container-left, .container-right, .newsletter {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-right {
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-right: 2em;
+}
+
+.container-left img {
+  width: 30em;
+  border-radius: 15em;
+}
+
+.newsletter {
+  padding: 2em;
+  display: block;
+  margin: auto;
+  width: 100%;
+  font-family: monospace;
+  color: rgb(70, 203, 255);
+  background-color: rgb(25, 29, 31);
+}
+
+.newsletter input {
+  margin: 1em 1em;
+  border-radius: 0.5em;
+  padding: 0.3em 0.6em;
+  border: 2px solid;
+  width: 400px;
+}
+
+.newsletter input:focus {
+  outline: none;
+}
+
+.newsletter button {
+  background-color:#1d2325;
+  color: rgb(48, 179, 255);
+  border: 2px solid;
+  border-radius: 3em;
+  padding: 0.4em 0.7em;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.newsletter button:hover {
+  color: #000000;
+  background-color: rgb(108, 201, 255);
+}
+
+.emphasize {
+  color: rgb(28, 183, 255);
+}
+
+.big {
+  font-size: 2.5em;
+}
+
+.large-container {
+  display: block;
+  text-align: center;
+  padding-top: 8em;
+  color: white;
+}
+
+.large-container h1{
+  color: rgb(116, 211, 255);
+}
+
+.another-container {
+  display: flex;
+  width: 100%;
+  padding: 0 3em;
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+.another-container h1, h2, h3, p{
+  font-family: monospace;
+}
+
+.map {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  margin: 2em;
+  border: 5px solid rgb(2, 76, 119);
+}
+
+
